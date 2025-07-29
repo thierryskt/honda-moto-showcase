@@ -71,14 +71,23 @@ export default {
 			backgroundImage: {
 				'gradient-hero': 'var(--gradient-hero)',
 				'gradient-card': 'var(--gradient-card)',
-				'gradient-category': 'var(--gradient-category)'
+				'gradient-category': 'var(--gradient-category)',
+				'gradient-cta': 'var(--gradient-cta)',
+				'gradient-accent': 'var(--gradient-accent)'
 			},
 			boxShadow: {
 				'card': 'var(--shadow-card)',
-				'hover': 'var(--shadow-hover)'
+				'hover': 'var(--shadow-hover)',
+				'glow': 'var(--shadow-glow)',
+				'button': 'var(--shadow-button)'
 			},
 			transitionProperty: {
-				'smooth': 'var(--transition-smooth)'
+				'smooth': 'var(--transition-smooth)',
+				'bounce': 'var(--transition-bounce)'
+			},
+			fontFamily: {
+				'sans': ['Inter', 'system-ui', 'sans-serif'],
+				'display': ['Poppins', 'system-ui', 'sans-serif']
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

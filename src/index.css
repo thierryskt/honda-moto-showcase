@@ -8,108 +8,112 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
+    /* Modern Color Palette */
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
-
+    --foreground: 240 10% 3.9%;
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
-
+    --card-foreground: 240 10% 3.9%;
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-
-    /* Honda colors */
-    --honda-red: 0 73% 58%;
-    --honda-dark-red: 0 76% 42%;
-    --honda-blue: 210 29% 24%;
-    --honda-dark-blue: 210 31% 20%;
-    --whatsapp-green: 142 76% 36%;
-
-    --primary: var(--honda-red);
-    --primary-foreground: 0 0% 100%;
-
-    --secondary: var(--honda-blue);
-    --secondary-foreground: 0 0% 100%;
-
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-
-    --accent: var(--honda-blue);
-    --accent-foreground: 0 0% 100%;
-
+    --popover-foreground: 240 10% 3.9%;
+    --primary: 0 75% 58%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 0 75% 58%;
+    --radius: 0.75rem;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: var(--honda-red);
-
-    /* Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(var(--honda-red)), hsl(var(--honda-dark-blue)));
-    --gradient-card: linear-gradient(145deg, hsl(var(--honda-red)), hsl(var(--honda-dark-red)));
-    --gradient-category: linear-gradient(120deg, hsl(var(--honda-blue) / 0.8), hsl(var(--honda-red) / 0.8));
-
-    /* Shadows */
-    --shadow-card: 0 10px 25px -5px hsl(var(--honda-red) / 0.1);
-    --shadow-hover: 0 20px 35px -5px hsl(var(--honda-red) / 0.2);
-
-    /* Animations */
+    /* Honda Brand Colors - Enhanced */
+    --honda-red: 0 85% 58%;
+    --honda-dark-red: 0 85% 48%;
+    --honda-blue: 220 85% 58%;
+    --honda-dark-blue: 220 85% 48%;
+    --whatsapp-green: 122 60% 45%;
+    
+    /* Modern Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(0 85% 58%) 0%, hsl(220 85% 58%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(240 4.8% 97%) 100%);
+    --gradient-category: linear-gradient(135deg, hsl(0 85% 58% / 0.1) 0%, hsl(220 85% 58% / 0.1) 100%);
+    --gradient-cta: linear-gradient(135deg, hsl(0 85% 58%) 0%, hsl(0 85% 48%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(220 85% 58%) 0%, hsl(240 85% 58%) 100%);
+    
+    /* Modern Shadows */
+    --shadow-card: 0 4px 24px -1px hsl(0 0% 0% / 0.08), 0 2px 8px -1px hsl(0 0% 0% / 0.04);
+    --shadow-hover: 0 8px 32px -4px hsl(0 0% 0% / 0.12), 0 4px 16px -2px hsl(0 0% 0% / 0.06);
+    --shadow-glow: 0 0 24px hsl(0 85% 58% / 0.3);
+    --shadow-button: 0 2px 8px hsl(0 85% 58% / 0.2);
+    
+    /* Modern Transitions */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-
-    --radius: 0.5rem;
-
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    
+    /* Sidebar */
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-border: 240 5.9% 90%;
+    --sidebar-ring: 240 5% 64.9%;
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 75% 58%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 0 75% 58%;
+    
+    /* Honda Brand Colors - Dark Mode */
+    --honda-red: 0 85% 62%;
+    --honda-dark-red: 0 85% 52%;
+    --honda-blue: 220 85% 62%;
+    --honda-dark-blue: 220 85% 52%;
+    --whatsapp-green: 122 60% 50%;
+    
+    /* Dark Mode Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(240 10% 3.9%) 0%, hsl(240 3.7% 15.9%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(240 10% 3.9%) 0%, hsl(240 3.7% 15.9%) 100%);
+    --gradient-category: linear-gradient(135deg, hsl(0 85% 62% / 0.1) 0%, hsl(220 85% 62% / 0.1) 100%);
+    --gradient-cta: linear-gradient(135deg, hsl(0 85% 62%) 0%, hsl(0 85% 52%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(220 85% 62%) 0%, hsl(240 85% 62%) 100%);
+    
+    /* Dark Mode Shadows */
+    --shadow-card: 0 4px 24px -1px hsl(0 0% 0% / 0.2), 0 2px 8px -1px hsl(0 0% 0% / 0.1);
+    --shadow-hover: 0 8px 32px -4px hsl(0 0% 0% / 0.3), 0 4px 16px -2px hsl(0 0% 0% / 0.15);
+    --shadow-glow: 0 0 24px hsl(0 85% 62% / 0.4);
+    --shadow-button: 0 2px 8px hsl(0 85% 62% / 0.3);
+    
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-primary: 0 0% 98%;
+    --sidebar-primary-foreground: 240 5.9% 10%;
     --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 0 0% 98%;
     --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-ring: 240 4.9% 83.9%;
   }
 }
 
@@ -119,31 +123,100 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
   }
 }
 
 @layer utilities {
+  /* Modern Utility Classes */
   .animate-fade-in {
     animation: fade-in 0.6s ease-out forwards;
-    opacity: 0;
   }
 
+  .animate-slide-up {
+    animation: slide-up 0.6s ease-out forwards;
+  }
+
+  .animate-scale-in {
+    animation: scale-in 0.4s ease-out forwards;
+  }
+
+  .glass-morphism {
+    @apply backdrop-blur-md bg-white/10 border border-white/20;
+  }
+
+  .hover-lift {
+    @apply transition-all duration-300 hover:shadow-hover hover:-translate-y-1;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-honda-red to-honda-blue bg-clip-text text-transparent;
+  }
+
+  .cta-button {
+    @apply bg-gradient-cta text-white font-semibold px-8 py-4 rounded-xl shadow-button hover:shadow-hover transform hover:scale-105 transition-all duration-300;
+  }
+
+  .card-modern {
+    @apply bg-gradient-card shadow-card hover:shadow-hover rounded-2xl border border-border/50 transition-all duration-300;
+  }
+
+  /* Line clamp utilities */
   .line-clamp-2 {
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
   }
+
+  .line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
 }
 
+/* Modern Animations */
 @keyframes fade-in {
   from {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(20px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
   }
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes scale-in {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 8px hsl(var(--honda-red) / 0.3);
+  }
+  50% {
+    box-shadow: 0 0 24px hsl(var(--honda-red) / 0.6);
   }
 }

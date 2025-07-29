@@ -16,93 +16,100 @@ const BikeCard = ({ bike, onInterestClick }: BikeCardProps) => {
   const isRecommended = Math.random() > 0.6;
 
   return (
-    <Card className="group overflow-hidden hover:shadow-hover transition-all duration-300 hover:scale-105 bg-card border-border">
+    <Card className="group card-modern hover-lift bg-card border-border/50 overflow-hidden">
       <div className="relative">
-        {/* Price Tag */}
-        <div className="absolute top-4 left-4 z-10 bg-honda-red text-white px-3 py-1 rounded-lg font-bold text-sm shadow-lg">
+        {/* Modern Price Tag with Gradient */}
+        <div className="absolute top-4 left-4 z-10 bg-gradient-cta text-white px-4 py-2 rounded-xl font-bold text-lg shadow-button">
           {bike.price}
+          <div className="text-xs font-normal opacity-90 mt-1">à vista</div>
         </div>
 
-        {/* Social Badges */}
+        {/* Enhanced Social Badges */}
         <div className="absolute top-4 right-4 z-10 flex flex-col gap-2">
           {isPopular && (
-            <Badge className="bg-orange-500 text-white text-xs">
-              🔥 Mais vendida
+            <Badge className="bg-gradient-to-r from-orange-500 to-red-500 text-white text-xs font-medium px-3 py-1 rounded-full shadow-lg">
+              🔥 Mais Vendida
             </Badge>
           )}
           {isRecommended && (
-            <Badge className="bg-honda-blue text-white text-xs">
-              👨‍💼 Recomendação do João
+            <Badge className="bg-gradient-accent text-white text-xs font-medium px-3 py-1 rounded-full shadow-lg">
+              ⭐ Recomendação do João
             </Badge>
           )}
         </div>
 
-        {/* Heart/Save Button */}
+        {/* Modern Heart/Save Button */}
         <Button
           variant="ghost"
           size="icon"
-          className="absolute bottom-4 right-4 z-10 bg-white/80 hover:bg-white text-honda-red"
+          className="absolute bottom-4 right-4 z-10 bg-white/90 hover:bg-white text-honda-red shadow-lg rounded-full backdrop-blur-sm hover:scale-110 transition-all duration-300"
         >
-          <Heart className="w-4 h-4" />
+          <Heart className="w-5 h-5" />
         </Button>
         
-        {/* Bike Image */}
-        <div className="relative h-48 bg-gradient-to-br from-honda-blue/5 to-honda-red/5 flex items-center justify-center overflow-hidden">
+        {/* Enhanced Bike Image Container */}
+        <div className="relative h-64 bg-gradient-category flex items-center justify-center overflow-hidden rounded-t-2xl">
           <img
             src={bike.image}
             alt={bike.name}
-            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
             onError={(e) => {
               const target = e.target as HTMLImageElement;
               target.src = 'https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=400&h=300&fit=crop';
             }}
           />
           
-          {/* Overlay on hover */}
-          <div className="absolute inset-0 bg-gradient-category opacity-0 group-hover:opacity-80 transition-opacity duration-300 flex items-center justify-center">
+          {/* Modern Overlay with CTA */}
+          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-end justify-center pb-6">
             <Button
               variant="secondary"
-              className="bg-white text-honda-blue hover:bg-white/90 font-semibold"
+              className="bg-white/95 text-honda-red hover:bg-white font-semibold px-6 py-3 rounded-xl shadow-lg transform translate-y-4 group-hover:translate-y-0 transition-all duration-300"
               onClick={() => onInterestClick(bike)}
             >
-              Ver Detalhes
+              📱 Ver Detalhes
             </Button>
           </div>
         </div>
       </div>
       
       <CardContent className="p-6">
-        <h3 className="text-xl font-bold mb-2 text-foreground group-hover:text-honda-red transition-colors">
+        {/* Title with modern typography */}
+        <h3 className="text-2xl font-display font-bold mb-3 text-foreground group-hover:gradient-text transition-all duration-300">
           {bike.name}
         </h3>
         
-        <p className="text-muted-foreground text-sm mb-4 line-clamp-2">
+        {/* Description */}
+        <p className="text-muted-foreground text-sm mb-4 line-clamp-2 leading-relaxed">
           {bike.description}
         </p>
 
-        {/* Social Stats */}
-        <div className="flex items-center gap-4 mb-4 text-xs text-muted-foreground">
-          <div className="flex items-center gap-1">
-            <Eye className="w-3 h-3" />
-            <span>{getRandomViews()} visualizações</span>
+        {/* Enhanced Social Stats */}
+        <div className="flex items-center justify-between mb-6 p-3 bg-gradient-category rounded-xl">
+          <div className="flex items-center gap-1 text-xs text-muted-foreground">
+            <Eye className="w-4 h-4 text-honda-blue" />
+            <span className="font-medium">{getRandomViews()}</span>
+            <span>visualizações</span>
           </div>
-          <div className="flex items-center gap-1">
-            <Clock className="w-3 h-3" />
-            <span>Vendido há {getRandomDaysAgo()} dias</span>
+          <div className="flex items-center gap-1 text-xs text-muted-foreground">
+            <Clock className="w-4 h-4 text-honda-red" />
+            <span className="font-medium">Último vendido há {getRandomDaysAgo()} dias</span>
           </div>
         </div>
         
-        <div className="flex flex-col gap-3">
+        {/* Modern CTA Section */}
+        <div className="space-y-4">
           <Button
             onClick={() => onInterestClick(bike)}
-            className="w-full bg-honda-red hover:bg-honda-dark-red text-white font-semibold transition-all duration-300"
+            className="w-full cta-button text-lg py-4 rounded-xl font-bold"
           >
-            Tenho Interesse
+            💬 Quero Esta Moto!
           </Button>
           
-          <p className="text-xs text-muted-foreground text-center">
-            *Preço público sugerido. Frete não incluso.
-          </p>
+          {/* Trust Signal */}
+          <div className="flex items-center justify-center gap-2 text-xs text-muted-foreground bg-muted/50 rounded-lg py-2">
+            <span className="text-green-600">✓</span>
+            <span>Garantia Honda • Financiamento em 24h • Entrada facilitada</span>
+          </div>
         </div>
       </CardContent>
     </Card>
