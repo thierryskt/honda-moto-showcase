@@ -3,7 +3,7 @@ import { Seller, Post, Testimonial, Story, WorkGallery } from '@/types/seller';
 export const seller: Seller = {
   id: '1',
   name: 'João Silva',
-  avatar: 'https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b?w=120&h=120&fit=crop&crop=face',
+  avatar: '/lovable-uploads/92fd1cb5-e36a-4dae-8d75-02c49954d94d.png',
   position: 'Consultor de Vendas Honda',
   rating: 4.8,
   totalSales: 847,

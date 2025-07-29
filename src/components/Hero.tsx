@@ -1,9 +1,14 @@
 const Hero = () => {
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center bg-gradient-hero relative overflow-hidden">
-      {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-20">
-        <div className="absolute inset-0 bg-gradient-to-br from-honda-red/10 to-honda-blue/10" />
+    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
+      {/* Background Image */}
+      <div className="absolute inset-0">
+        <img 
+          src="/lovable-uploads/29c09e18-b68e-4404-9f0f-38e5f2dbcc05.png" 
+          alt="Divino Honda - Concessionária Autorizada"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-black/30"></div>
       </div>
       
       <div className="container mx-auto px-4 text-center relative z-10">
