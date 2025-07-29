@@ -228,11 +228,11 @@ export const bikes: Bike[] = [
     price: 'R$ 43.040,00',
     priceNumber: 43040,
     category: 'street',
-    image: 'https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=600&h=400&fit=crop',
+    image: '/lovable-uploads/7889673e-35bf-42d0-8b30-6497966053e9.png',
     colors: [
-      { name: 'Amarela', image: 'https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=600&h=400&fit=crop', colorCode: '#eab308' },
-      { name: 'Vermelha', image: 'https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?w=600&h=400&fit=crop', colorCode: '#dc2626' },
-      { name: 'Preta', image: 'https://images.unsplash.com/photo-1571068316344-75bc76f77890?w=600&h=400&fit=crop', colorCode: '#1f2937' }
+      { name: 'Vermelha', image: '/lovable-uploads/7889673e-35bf-42d0-8b30-6497966053e9.png', colorCode: '#dc2626' },
+      { name: 'Preta', image: '/lovable-uploads/1568b85e-2264-48b3-92e5-4b0b1df36b74.png', colorCode: '#1f2937' },
+      { name: 'Prata', image: '/lovable-uploads/a941bebe-7d66-45d4-aabf-9738b5f2af80.png', colorCode: '#94a3b8' }
     ],
     description: 'A naked de média cilindrada mais desejada.',
     specs: {
@@ -250,11 +250,11 @@ export const bikes: Bike[] = [
     price: 'R$ 52.590,00',
     priceNumber: 52590,
     category: 'street',
-    image: 'https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=600&h=400&fit=crop',
+    image: '/lovable-uploads/7889673e-35bf-42d0-8b30-6497966053e9.png',
     colors: [
-      { name: 'Vermelha', image: 'https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=600&h=400&fit=crop', colorCode: '#dc2626' },
-      { name: 'Branca', image: 'https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?w=600&h=400&fit=crop', colorCode: '#f8fafc' },
-      { name: 'Preta', image: 'https://images.unsplash.com/photo-1571068316344-75bc76f77890?w=600&h=400&fit=crop', colorCode: '#1f2937' }
+      { name: 'Vermelha', image: '/lovable-uploads/7889673e-35bf-42d0-8b30-6497966053e9.png', colorCode: '#dc2626' },
+      { name: 'Preta', image: '/lovable-uploads/1568b85e-2264-48b3-92e5-4b0b1df36b74.png', colorCode: '#1f2937' },
+      { name: 'Prata', image: '/lovable-uploads/a941bebe-7d66-45d4-aabf-9738b5f2af80.png', colorCode: '#94a3b8' }
     ],
     description: 'Naked de alta cilindrada com performance e tecnologia.',
     specs: {
@@ -308,11 +308,11 @@ export const bikes: Bike[] = [
     price: 'R$ 55.360,00',
     priceNumber: 55360,
     category: 'sport',
-    image: 'https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=600&h=400&fit=crop',
+    image: '/lovable-uploads/7889673e-35bf-42d0-8b30-6497966053e9.png',
     colors: [
-      { name: 'Vermelha', image: 'https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=600&h=400&fit=crop', colorCode: '#dc2626' },
-      { name: 'Azul Metálico', image: 'https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?w=600&h=400&fit=crop', colorCode: '#2563eb' },
-      { name: 'Preta', image: 'https://images.unsplash.com/photo-1571068316344-75bc76f77890?w=600&h=400&fit=crop', colorCode: '#1f2937' }
+      { name: 'Vermelha', image: '/lovable-uploads/7889673e-35bf-42d0-8b30-6497966053e9.png', colorCode: '#dc2626' },
+      { name: 'Preta', image: '/lovable-uploads/1568b85e-2264-48b3-92e5-4b0b1df36b74.png', colorCode: '#1f2937' },
+      { name: 'Prata', image: '/lovable-uploads/a941bebe-7d66-45d4-aabf-9738b5f2af80.png', colorCode: '#94a3b8' }
     ],
     description: 'Supersportiva com design agressivo e performance superior.',
     specs: {
