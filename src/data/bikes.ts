@@ -228,7 +228,12 @@ export const bikes: Bike[] = [
     price: 'R$ 43.040,00',
     priceNumber: 43040,
     category: 'street',
-    image: '/placeholder.svg',
+    image: 'https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=600&h=400&fit=crop',
+    colors: [
+      { name: 'Amarela', image: 'https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=600&h=400&fit=crop', colorCode: '#eab308' },
+      { name: 'Vermelha', image: 'https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?w=600&h=400&fit=crop', colorCode: '#dc2626' },
+      { name: 'Preta', image: 'https://images.unsplash.com/photo-1571068316344-75bc76f77890?w=600&h=400&fit=crop', colorCode: '#1f2937' }
+    ],
     description: 'A naked de média cilindrada mais desejada.',
     specs: {
       motor: 'Bicilíndrico, 4 tempos, DOHC',
@@ -245,7 +250,12 @@ export const bikes: Bike[] = [
     price: 'R$ 52.590,00',
     priceNumber: 52590,
     category: 'street',
-    image: '/placeholder.svg',
+    image: 'https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=600&h=400&fit=crop',
+    colors: [
+      { name: 'Vermelha', image: 'https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=600&h=400&fit=crop', colorCode: '#dc2626' },
+      { name: 'Branca', image: 'https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?w=600&h=400&fit=crop', colorCode: '#f8fafc' },
+      { name: 'Preta', image: 'https://images.unsplash.com/photo-1571068316344-75bc76f77890?w=600&h=400&fit=crop', colorCode: '#1f2937' }
+    ],
     description: 'Naked de alta cilindrada com performance e tecnologia.',
     specs: {
       motor: '4 cilindros, 4 tempos, DOHC',
@@ -298,7 +308,12 @@ export const bikes: Bike[] = [
     price: 'R$ 55.360,00',
     priceNumber: 55360,
     category: 'sport',
-    image: '/placeholder.svg',
+    image: 'https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=600&h=400&fit=crop',
+    colors: [
+      { name: 'Vermelha', image: 'https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=600&h=400&fit=crop', colorCode: '#dc2626' },
+      { name: 'Azul Metálico', image: 'https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?w=600&h=400&fit=crop', colorCode: '#2563eb' },
+      { name: 'Preta', image: 'https://images.unsplash.com/photo-1571068316344-75bc76f77890?w=600&h=400&fit=crop', colorCode: '#1f2937' }
+    ],
     description: 'Supersportiva com design agressivo e performance superior.',
     specs: {
       motor: '4 cilindros, 4 tempos, DOHC',

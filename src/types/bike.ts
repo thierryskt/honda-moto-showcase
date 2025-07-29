@@ -1,3 +1,9 @@
+export interface ColorOption {
+  name: string;
+  image: string;
+  colorCode: string;
+}
+
 export interface Bike {
   id: string;
   name: string;
@@ -5,6 +11,7 @@ export interface Bike {
   priceNumber: number;
   category: 'street' | 'sport' | 'adventure' | 'touring' | 'offroad';
   image: string;
+  colors?: ColorOption[];
   description: string;
   specs?: {
     motor?: string;
